@@ -22,12 +22,12 @@ public class Test {
 		ApplicationContext context1 = new AnnotationConfigApplicationContext(User.class);
 		User user = (User) context1.getBean("user");
 		user.sayIisUser();
-		//
-		//ApplicationContext context2 = new AnnotationConfigApplicationContext(ConfigBean.class);
-		//Hello hello1 = (Hello) context2.getBean("hello");
-		//User user1  = context2.getBean("user",User.class);
-		//hello1.sayHelloSpring();
-		//user1.sayIisUser();
+
+		ApplicationContext context2 = new AnnotationConfigApplicationContext(ConfigBean.class);
+		Hello hello1 = (Hello) context2.getBean("hello");
+		User user1  = context2.getBean("user",User.class);
+		hello1.sayHelloSpring();
+		user1.sayIisUser();
 
 	}
 }
