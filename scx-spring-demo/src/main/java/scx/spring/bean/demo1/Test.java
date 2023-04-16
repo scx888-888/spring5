@@ -19,9 +19,9 @@ public class Test {
 		Hello hello = (Hello)context.getBean("hello");
 		hello.sayHelloSpring();
 		hello.sayHelloSpring();
-		//ApplicationContext context1 = new AnnotationConfigApplicationContext(User.class);
-		//User user = (User) context1.getBean("user");
-		//user.sayIisUser();
+		ApplicationContext context1 = new AnnotationConfigApplicationContext(User.class);
+		User user = (User) context1.getBean("user");
+		user.sayIisUser();
 		//
 		//ApplicationContext context2 = new AnnotationConfigApplicationContext(ConfigBean.class);
 		//Hello hello1 = (Hello) context2.getBean("hello");
